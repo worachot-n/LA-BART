@@ -65,7 +65,7 @@ def main():
     logging.info("")
 
     # Initialize the accelerator. The accelerator will handle device placement for us.
-    accelerator = Accelerator(fp16=True)
+    accelerator = Accelerator(mixed_precision="fp16")
     logger.info(accelerator.state)
 
     # Setup logging, we only want one process per machine to log things on the screen.

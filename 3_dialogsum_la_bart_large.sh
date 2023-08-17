@@ -15,7 +15,7 @@ echo $currentDate
 start=`date +%s`
 echo "= = = = = = = = = = = = = ="
 
-python train.py \
+python3 train.py \
     --len_input 'real' \
     --len_output 'no' \
     --output_dir ./output/3 \
@@ -35,8 +35,8 @@ python train.py \
     --label_smoothing 0.1 \
     --length_penalty 1.0 \
     --num_train_epochs 15 \
-    --per_device_train_batch_size 4 \
-    --gradient_accumulation_steps 32 \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 64 \
     --per_device_eval_batch_size 8 \
     --per_device_test_batch_size 8 \
     --num_warmup_steps 0 \

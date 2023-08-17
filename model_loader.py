@@ -42,6 +42,7 @@ def model_loader(accelerator, logger, args):
         )
     
     ori_tokenizer_len = len(tokenizer)
+    # print(tokenizer)
 
     model = AutoModelForSeq2SeqLM.from_pretrained(
         args.model_name_or_path,

@@ -1,9 +1,9 @@
-datasets==2.3.2
-nltk==3.7
+datasets
+nltk
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.12.0+cu113 
 torchvision==0.13.0+cu113 
 torchaudio==0.12.0
-transformers==4.11.3
-accelerate==0.9.0
+transformers
+accelerate
 py-rouge==1.1

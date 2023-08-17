@@ -14,7 +14,7 @@ echo $currentDate
 start=`date +%s`
 echo "= = = = = = = = = = = = = ="
 
-python train.py \
+python3 train.py \
     --len_input 'no' \
     --len_output 'no' \
     --output_dir ./output/1 \
